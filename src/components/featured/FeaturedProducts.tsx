@@ -1,4 +1,3 @@
-// src/components/featured/FeaturedProducts.tsx
 'use client';
 
 import ProductCard from '../ProductCard';
@@ -50,6 +49,54 @@ const products = [
     id: '8',
     image: '/images/product-card8.svg',
     name: 'Product 8',
+    price: 450,
+  },
+  {
+    id: '9',
+    image: '/images/product-card9.svg',
+    name: 'Product 9',
+    price: 450,
+  },
+  {
+    id: '10',
+    image: '/images/product-card10.svg',
+    name: 'Product 10',
+    price: 450,
+  },
+  {
+    id: '11',
+    image: '/images/product-card11.svg',
+    name: 'Product 11',
+    price: 450,
+  },
+  {
+    id: '12',
+    image: '/images/product-card12.svg',
+    name: 'Product 12',
+    price: 450,
+  },
+  {
+    id: '13',
+    image: '/images/product-card13.svg',
+    name: 'Product 13',
+    price: 450,
+  },
+  {
+    id: '14',
+    image: '/images/product-card14.svg',
+    name: 'Product 14',
+    price: 450,
+  },
+  {
+    id: '15',
+    image: '/images/product-card15.svg',
+    name: 'Product 15',
+    price: 450,
+  },
+  {
+    id: '16',
+    image: '/images/product-card16.svg',
+    name: 'Product 16',
     price: 450,
   },
 ];

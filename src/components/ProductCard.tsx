@@ -2,21 +2,23 @@
 
 interface Product {
   id: string;
-  name: string;
-  price: number;
   image: string;
+  name?: string;
+  price?: number;
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+interface ProductCardProps {
+  product: Product;
+}
+
+export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className='border p-2 rounded-lg'>
+    <div className='flex flex-col items-center'>
       <img
         src={product.image}
-        alt={product.name}
-        className='w-full h-auto rounded-md'
+        alt={product.name || 'Product Image'}
+        className='w-[210px] h-auto rounded-md lg:w-auto lg:h-auto lg:rounded-[12px]'
       />
-      <h2 className='font-semibold mt-2'>{product.name}</h2>
-      <p className='text-gray-500'>${product.price}</p>
     </div>
   );
 }
